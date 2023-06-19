@@ -2,7 +2,6 @@ package clients;
 
 import io.restassured.response.ValidatableResponse;
 import pojo.CreateOrderRequest;
-import pojo.UserRequest;
 
 import static io.restassured.RestAssured.given;
 

@@ -8,7 +8,6 @@ public class ChangeUserDataRequest {
         this.email = email;
         this.name = name;
     }
-    //private String password;
 
     public String getEmail() {
         return email;
@@ -26,13 +25,6 @@ public class ChangeUserDataRequest {
         this.name = name;
     }
 
-//    public String getPassword() {
-//        return password;
-//    }
-//
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
     public static ChangeUserDataRequest form(UserRequest userRequest) {
         return new ChangeUserDataRequest(userRequest.getEmail(), userRequest.getName());
     }

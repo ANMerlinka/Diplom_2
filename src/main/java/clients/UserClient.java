@@ -1,7 +1,6 @@
 package clients;
 
 import io.restassured.response.ValidatableResponse;
-import pojo.ChangeUserDataRequest;
 import pojo.LoginRequest;
 import pojo.UserRequest;
 

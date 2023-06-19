@@ -96,7 +96,6 @@ public class ChangeUserDataTest {
 
         userClient.changeDataWithAuth(randomUserRequest, accessToken)
                 .statusCode(200);
-                //.assertThat().body("user.email", Matchers.equalTo(randomNewEmail));
 
         //авторизация c новым паролем
         LoginRequest loginRequestWithNewPwd = LoginRequest.from(randomUserRequest);

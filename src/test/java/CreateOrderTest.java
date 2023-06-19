@@ -75,7 +75,7 @@ public class CreateOrderTest {
                     .body("order.number", Matchers.notNullValue());
         }
         else if (response.extract().statusCode() == 400) {
-            if (ingredients.isEmpty() == true) {
+            if (ingredients.isEmpty()) {
                 response
                         .statusCode(expectedStatusCode)
                         .assertThat()
@@ -117,7 +117,7 @@ public class CreateOrderTest {
                     .body("order.number", Matchers.notNullValue());
         }
         else if (response.extract().statusCode() == 400) {
-            if (ingredients.isEmpty() == true) {
+            if (ingredients.isEmpty()) {
                 response
                         .statusCode(expectedStatusCode)
                         .assertThat()
